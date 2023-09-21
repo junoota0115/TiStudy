@@ -332,7 +332,29 @@ header .right_content .ham_line2 {
 	/* font-size: 24px; */
 }
 
-.wrapper2 .contact .button {
+.wrapper2 .contact .button1 {
+	width: 400px;
+	color: #fff;
+	background-color: #03fc2c;
+	font-size: 1.5rem;
+	/* font-size: 24px; */
+	font-weight: bold;
+	padding: 1rem;
+	border: 1px solid #03fc2c;
+	border-radius: 40px;
+	white-space: nowrap;
+	user-select: none;
+	margin: 24px auto 0;
+	display: inline-block; /* ボタンを横並びに配置 */
+    margin-right: 0; /* ボタン間の横の感覚を0にする */
+}
+.wrapper2 .contact .button1:hover {
+	transition: all 0.3s;
+	color: #03fc2c;
+	background-color: #fff;
+	cursor: pointer;
+}
+.wrapper2 .contact .button2 {
 	width: 400px;
 	color: #fff;
 	background-color: #FF5613;
@@ -345,13 +367,16 @@ header .right_content .ham_line2 {
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
+	display: inline-block; /* ボタンを横並びに配置 */
+    margin-right: 0; /* ボタン間の横の感覚を0にする */
 }
-.wrapper2 .contact .button:hover {
+.wrapper2 .contact .button2:hover {
 	transition: all 0.3s;
 	color: #FF5613;
 	background-color: #fff;
 	cursor: pointer;
 }
+
 
 /* デザイン３ */
 .wrapper3 {

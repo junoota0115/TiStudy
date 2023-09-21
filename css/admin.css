@@ -1,0 +1,169 @@
+/* 共通 */
+* {
+	/* font-family: "FOT-TsukuARdGothic Std", "M PLUS Rounded 1c", system-ui; */
+	font-family: "M PLUS Rounded 1c", system-ui;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/* スクロールバー */
+::-webkit-scrollbar{
+	width: 5px;
+}
+::-webkit-scrollbar-track{
+	background-color: #ccc;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #2D9CDB;
+	border-radius: 2px;
+}
+
+/* 全体 */
+body {
+	width: 100%;
+	font-size: 1vw;
+}
+img.link_img:hover {
+	cursor: pointer;
+}
+.wrapper {
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+.wrapper .table_wrapper {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 32px;
+}
+.wrapper .table {
+	border: 2px solid #ccc;
+	border-collapse: collapse;
+	margin-top: 24px;
+}
+.wrapper .table th,
+.wrapper .table td {
+	padding: 0.3em 0.5em;
+	border: 1px solid #ccc;
+	white-space: pre-wrap;
+}
+
+/* オーバーレイ */
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1000;
+}
+.overlay.hidden {
+	display: none;
+}
+.overlay .content {
+	position: absolute;
+	top: calc(50% - 50px);
+	left: calc(50% - 50px);
+	width: 100px;
+	height: 100px;
+}
+.overlay .point {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+	transform: scale(0);
+}
+.overlay .point1 {
+	top: 20px;
+	left: 45px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: 0;
+	animation-iteration-count: infinite;
+}
+.overlay .point2 {
+	top: 27px;
+	left: 63px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(1s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point3 {
+	top: 45px;
+	left: 70px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(2s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point4 {
+	top: 63px;
+	left: 63px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(3s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point5 {
+	top: 70px;
+	left: 45px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(4s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point6 {
+	top: 63px;
+	left: 27px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(5s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point7 {
+	top: 45px;
+	left: 20px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(6s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point8 {
+	top: 27px;
+	left: 27px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(7s / 8);
+	animation-iteration-count: infinite;
+}
+
+@keyframes overlay-anime {
+	0% {
+		transform: scale(1.0);
+	}
+	12% {
+		transform: scale(1.0);
+	}
+	100% {
+		transform: scale(0);
+	}
+}

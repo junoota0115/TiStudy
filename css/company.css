@@ -1,0 +1,104 @@
+/* 共通 */
+* {
+	/* font-family: "FOT-TsukuARdGothic Std", "M PLUS Rounded 1c", system-ui; */
+	font-family: "M PLUS Rounded 1c", system-ui;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/* スクロールバー */
+::-webkit-scrollbar{
+	width: 5px;
+}
+::-webkit-scrollbar-track{
+	background-color: #ccc;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #2D9CDB;
+	border-radius: 2px;
+}
+
+/* 全体 */
+body {
+	width: 100%;
+	font-size: 1vw;
+}
+img.link_img:hover {
+	cursor: pointer;
+}
+
+/* デザイン */
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	padding-top: 200px;
+	background-image: url("../img_HP/Ti_back.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: left 50% bottom 50%;
+}
+.wrapper .title {
+	position: relative;
+	font-size: 2.5rem;
+	/* font-size: 40px; */
+	color: #262626;
+	text-align: center;
+}
+.wrapper .title:after {
+	content: "";
+	position: absolute;
+	top: calc(100% + 5px);
+	left: calc(50% - 1rem);
+	height: 2px;
+	width: 2rem;
+	background-color: #262626;
+}
+.wrapper .data_list {
+	width: 50%;
+	min-width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 24px 80px;
+	margin: 50px auto 0;
+	font-size: 1.5rem;
+	/* font-size: 24px; */
+	color: #262626;
+}
+.wrapper .data_list .name {
+	flex: 1 1 calc(30% - 40px);
+	text-align: right;
+}
+.wrapper .data_list .data {
+	flex: 1 1 calc(70% - 40px);
+	text-align: left;
+}
+
+
+/* SP版 */
+@media (max-width: 800px) {
+	/* デザイン */
+	.wrapper {
+		width: 100%;
+		height: 100vh;
+		padding-top: 100px;
+		background-size: 100%;
+		background-position: left 0 top 0;
+	}
+	.wrapper .title {
+		font-size: 1.5rem;
+		/* font-size: 24px; */
+	}
+	.wrapper .data_list {
+		width: 90%;
+		min-width: auto;
+		gap: 24px 40px;
+		font-size: 0.75rem;
+		/* font-size: 12px; */
+	}
+}

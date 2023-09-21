@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8">
+	<meta name=”robots” content=”noindex,nofollow”>
+	<link rel="icon" href="./favicon.ico" />
+	<title>Ti Study | お問い合わせフォーム</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/contact.css?20230301">
+</head>
+<body>
+	<header>
+		<div class="left_content">
+			<img class="link_img home_img" src="./img_HP/Ti.png" alt="Ti-study" width="100%" height="100%">
+		</div>
+	</header>
+
+	<div class="wrapper">
+		<div class="title">Contact</div>
+		<form id="contactform">
+			<div class="data_list">
+				<div class="name">生徒氏名</div>
+				<div class="data">
+					<input type="text" name="student_name" placeholder="お子様のお名前を入力してください">
+				</div>
+				<div class="name">学年</div>
+				<div class="data">
+					<input type="text" name="student_grade" placeholder="お子様の学年を入力してください">
+				</div>
+				<div class="name">保護者氏名</div>
+				<div class="data">
+					<input type="text" name="parent_name" placeholder="保護者のお名前を入力してください">
+				</div>
+				<div class="name">電話番号</div>
+				<div class="data">
+					<input type="text" name="tel_number" placeholder="電話番号を入力してください">
+				</div>
+				<div class="name">メールアドレス</div>
+				<div class="data">
+					<input type="text" name="mail_address" placeholder="メールアドレスを入力してください">
+				</div>
+				<div class="name">メールアドレス(確認用)</div>
+				<div class="data">
+					<input type="text" name="mail_check" placeholder="メールアドレス(確認用)を入力してください">
+				</div>
+				<div class="name">お問い合わせ内容</div>
+				<div class="data">
+					<textarea name="contact_content" id="" cols="30" rows="10"></textarea>
+				</div>
+			</div>
+		</form>
+		<div class="submit">
+			<button class="submit_btn">送信する</button>
+		</div>
+	</div>
+
+	<!-- オーバーレイ -->
+	<div class="overlay hidden">
+		<div class="content">
+			<div class="point point1"></div>
+			<div class="point point2"></div>
+			<div class="point point3"></div>
+			<div class="point point4"></div>
+			<div class="point point5"></div>
+			<div class="point point6"></div>
+			<div class="point point7"></div>
+			<div class="point point8"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./js/contact.js?20230301"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* 共通 */
+* {
+	/* font-family: "FOT-TsukuARdGothic Std", "M PLUS Rounded 1c", system-ui; */
+	font-family: "M PLUS Rounded 1c", system-ui;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	max-width: 1440px;
+	margin: 0 auto;
+	/* font-size: 1vw;
+	max-width: 1440px;
+	margin: 0 auto; */
+}
+
+/* スクロールバー */
+::-webkit-scrollbar{
+	width: 5px;
+}
+::-webkit-scrollbar-track{
+	background-color: #ccc;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #2D9CDB;
+	border-radius: 2px;
+}
+
+/* 全体 */
+body {
+	width: 100%;
+	font-size: 1vw;
+}
+img.link_img:hover {
+	cursor: pointer;
+}
+.wrapper {
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+/* デザイン1 */
+.wrapper1 {
+	width: 160px;
+	height: 160px;
+	margin: 0 auto;
+}
+
+/* デザイン2 */
+.wrapper2 {
+	width: 100%;
+	margin: 48px auto 0;
+	text-align: center;
+}
+.wrapper2 .message1 {
+	font-size: 4rem;
+	/* font-size: 64px; */
+	color: #393939;
+}
+.wrapper2 .message2 {
+	margin-top: 42px;
+	font-size: 2.5rem;
+	/* font-size: 40px; */
+	color: #393939;
+}
+
+/* デザイン3 */
+.wrapper3 {
+	margin-top: 120px;
+	text-align: center;
+}
+.wrapper3 .button {
+	display: inline-block;
+	width: 50%;
+	min-width: 640px;
+	color: #fff;
+	font-size: 2rem;
+	/* font-size: 32px; */
+	padding-top: 16px;
+	padding-bottom: 16px;
+	border-radius: 40px;
+	letter-spacing: 0.1em;
+	user-select: none;
+}
+.wrapper3 .button:hover {
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.wrapper3 .button.linebtn {
+	background-color: #4CC764;
+	border: 1px solid #4CC764;
+}
+.wrapper3 .button.linebtn:hover {
+	color: #4CC764;
+	background-color: #fff;
+}
+.wrapper3 .button.contactbtn {
+	background-color: #FF5613;
+	border: 1px solid #FF5613;
+	margin-top: 40px;
+}
+.wrapper3 .button.contactbtn:hover {
+	color: #FF5613;
+	background-color: #fff;
+}
+
+
+/* SP版 */
+@media (max-width: 800px) {
+		/* 全体 */
+	.wrapper {
+		margin-top: 120px;
+		margin-bottom: 0;
+	}
+
+	/* デザイン1 */
+	.wrapper1 {
+		width: 80px;
+		height: 80px;
+	}
+
+	/* デザイン2 */
+	.wrapper2 {
+		margin-top: 24px;
+	}
+	.wrapper2 .message1 {
+		font-size: 1rem;
+		/* font-size: 16px; */
+	}
+	.wrapper2 .message2 {
+		font-size: 1rem;
+		/* font-size: 16px; */
+		margin-top: 32px;
+	}
+	
+	/* デザイン3 */
+	.wrapper3 {
+		/* margin-top: 144px; */
+		margin-bottom: 24px;
+	}
+	.wrapper3 .button {
+		font-size: 1rem;
+		/* font-size: 16px; */
+		min-width: 320px;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	.wrapper3 .button.contactbtn {
+		margin-top: 24px;
+	}
+}

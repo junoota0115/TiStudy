@@ -1,0 +1,301 @@
+/* 共通 */
+* {
+	/* font-family: "FOT-TsukuARdGothic Std", "M PLUS Rounded 1c", system-ui; */
+	font-family: "M PLUS Rounded 1c", system-ui;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+/* スクロールバー */
+::-webkit-scrollbar{
+	width: 5px;
+}
+::-webkit-scrollbar-track{
+	background-color: #ccc;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #2D9CDB;
+	border-radius: 2px;
+}
+
+/* 全体 */
+body {
+	width: 100%;
+	font-size: 1vw;
+}
+img.link_img:hover {
+	cursor: pointer;
+}
+.hidden {
+	display: none !important;
+}
+
+/* デザイン */
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	padding-top: 200px;
+	margin-bottom: 50px;
+	background-image: url("../img_HP/Ti_back.png");
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: left 50% bottom 50%;
+}
+.wrapper .title {
+	position: relative;
+	font-size: 2.5rem;
+	/* font-size: 40px; */
+	color: #0C0C0C;
+	text-align: center;
+}
+.wrapper .title:after {
+	content: "";
+	position: absolute;
+	top: calc(100% + 5px);
+	left: calc(50% - 1rem);
+	height: 2px;
+	width: 2rem;
+	background-color: #0C0C0C;
+}
+.wrapper .data_list {
+	width: 80%;
+	min-width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 16px 80px;
+	font-size: 1.25rem;
+	/* font-size: 20px; */
+	margin: 50px auto 0;
+	color: #0C0C0C;
+}
+.wrapper .data_list .name {
+	flex: 1 1 calc(30% - 40px);
+	text-align: right;
+}
+.wrapper .data_list .data {
+	flex: 1 1 calc(70% - 40px);
+	text-align: left;
+}
+.wrapper .data_list .data input[type="text"],
+.wrapper .data_list .data textarea {
+	padding: 0.2rem;
+	width: 100%;
+	font-size: 1.25rem;
+	/* font-size: 20px; */
+	background: rgba(255, 255, 255, 0.4);
+	border: 1px solid #C4C4C4;
+	border-radius: 8px;
+}
+.wrapper .data_list .data input.bRed,
+.wrapper .data_list .data textarea.bRed {
+	border-color: #f00;
+}
+.wrapper .data_list .data .contact_label {
+	margin-right: 2.5rem;
+	cursor: pointer;
+	user-select: none;
+}
+.wrapper .data_list .data .tool_check {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	background-color: rgba(38, 38, 38, 0.2);
+	/* background-color: #2D9CDB; */
+	border-radius: 50%;
+	margin-right: .5rem;
+}
+.wrapper .data_list .data .tool_check.checked {
+	transition: all 0.3s;
+	background-color: #2D9CDB;
+}
+.wrapper .data_list .data .tool_check.bRed {
+	border: 1px solid #F00;
+}
+.wrapper .data_list .data input[name="contact_tool"] {
+	display: none;
+}
+.wrapper .submit {
+	width: 80%;
+	min-width: 500px;
+	margin: 16px auto 0;
+	text-align: right;
+}
+.wrapper .submit .submit_btn {
+	display: inline-block;
+	color: #fff;
+	background: #2D9CDB;
+	font-size: 1.25rem;
+	/* font-size: 20px; */
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+	padding: 0.5rem 2rem;
+	border: none;
+	border-radius: 1rem;
+	user-select: none;
+	cursor: pointer;
+}
+
+/* オーバーレイ */
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1000;
+}
+.overlay.hidden {
+	display: none;
+}
+.overlay .content {
+	position: absolute;
+	top: calc(50% - 50px);
+	left: calc(50% - 50px);
+	width: 100px;
+	height: 100px;
+}
+.overlay .point {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+	transform: scale(0);
+}
+.overlay .point1 {
+	top: 20px;
+	left: 45px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: 0;
+	animation-iteration-count: infinite;
+}
+.overlay .point2 {
+	top: 27px;
+	left: 63px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(1s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point3 {
+	top: 45px;
+	left: 70px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(2s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point4 {
+	top: 63px;
+	left: 63px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(3s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point5 {
+	top: 70px;
+	left: 45px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(4s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point6 {
+	top: 63px;
+	left: 27px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(5s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point7 {
+	top: 45px;
+	left: 20px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(6s / 8);
+	animation-iteration-count: infinite;
+}
+.overlay .point8 {
+	top: 27px;
+	left: 27px;
+
+	animation-name: overlay-anime;
+	animation-duration: 1s;
+	animation-delay: calc(7s / 8);
+	animation-iteration-count: infinite;
+}
+
+@keyframes overlay-anime {
+	0% {
+		transform: scale(1.0);
+	}
+	12% {
+		transform: scale(1.0);
+	}
+	100% {
+		transform: scale(0);
+	}
+}
+
+/* SP版 */
+@media (max-width: 800px) {
+	/* デザイン */
+	.wrapper {
+		width: 100%;
+		min-height: 100vh;
+		padding-top: 100px;
+		background-size: 100%;
+		background-position: left 0 top 0;
+	}
+	.wrapper .title {
+		font-size: 1.5rem;
+		/* font-size: 24px; */
+	}
+	.wrapper .data_list {
+		width: 90%;
+		min-width: auto;
+		gap: 4px;
+		font-size: 1rem;
+		/* font-size: 16px; */
+	}
+	.wrapper .data_list .name {
+		flex: 1 1 100%;
+		text-align: left;
+	}
+	.wrapper .data_list .data {
+		flex: 1 1 100%;
+		margin-bottom: 12px;
+	}
+	.wrapper .data_list .data input,
+	.wrapper .data_list .data textarea {
+		font-size: 1rem;
+		/* font-size: 16px; */
+		padding: 0.4rem;
+	}
+	.wrapper .submit {
+		width: 90%;
+		min-width: auto;
+	}
+	.wrapper .submit .submit_btn {
+		font-size: 0.75rem;
+		/* font-size: 12px; */
+	}
+}

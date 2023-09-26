@@ -215,25 +215,36 @@ header .right_content .ham_line2 {
 	cursor: pointer;
 }
 .wrapper1 .information {
-	position: absolute;
+	/* position: absolute;
 	bottom: 40px;
 	left: 40px;
 	right: 40px;
 	height: 300px;
-	display: flex;
-	flex-wrap: nowrap;
+	display: flex; */
+	/* flex-wrap: nowrap;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
+	/* border-radius: 16px; */
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
 	gap: 32px;
 	background-color: #fff;
-	border-radius: 16px;
-	padding: 56px;
+	padding: 20px;
 	color: #2D9CDB;
 }
+
+.wrapper1 .information .info_all{
+	margin-top: 15px;
+	border: solid 5px;
+	border-radius: 10px;
+}
+
 .wrapper1 .information .info_title {
 	flex: 0 1 20%;
 	height: 100%;
-	text-align: left;
+	text-align: center;
+	margin-top: 50px;
 }
 .wrapper1 .information .info_title p {
 	font-size: 3rem;

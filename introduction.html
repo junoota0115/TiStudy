@@ -9,6 +9,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/c62d1e535a.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="./css/introduction.css?20230530">
+	<link rel="stylesheet" href="./slick/slick.css">
+	<link rel="stylesheet" href="./slick/slick-theme.css">
 </head>
 <body>
 	<header>
@@ -66,6 +68,13 @@
 				<div class="info_lists"></div>
 			</div>
 		</div>
+
+		<!--動画の差し込み-->
+		<div class="wrapper9" id="anchor0">
+			<h1>動画画面</h1>
+		</div>
+		<!--動画の差し込み-->
+
 
 		<div class="wrapper2" id="anchor0">
 			<div class="title">Ti Study<span>の</span>指導方法</div>
@@ -264,7 +273,7 @@
 		<div class="wrapper5" id="anchor3">
 			<div class="title">授業実施場所について</div>
 			<div class="room_list">
-				<div class="picture1"><img src="./img_LP/room_picture1.png" width="100%" height="100%"></div>
+				<!-- <div class="picture1"><img src="./img_LP/room_picture1.png" width="100%" height="100%"></div> -->
 				<div class="address">
 					<p>貸会議室を利用して授業を行います。</p>
 					<p>
@@ -272,11 +281,30 @@
 						<span>新潟県新潟市中央区新和1丁目6-20<br>アーク笹出</span>
 					</p>
 				</div>
-				<div class="picture2"><img src="./img_LP/room_picture2.png" width="100%" height="100%"></div>
-				<div class="picture3"><img src="./img_LP/room_picture3.png" width="100%" height="100%"></div>
+				<!-- <div class="picture2"><img src="./img_LP/room_picture2.png" width="100%" height="100%"></div>
+				<div class="picture3"><img src="./img_LP/room_picture3.png" width="100%" height="100%"></div> -->
 			</div>
 		</div>
 
+					    <!-- スライドショーのコンテナを作成 -->
+						<div class="slider-for">
+							<!-- メインのスライドショー -->
+							<div><img src="./img_LP/room_picture1.png" width="100%" height="100%"></div>
+							<div><img src="./img_LP/room_picture2.png" width="100%" height="100%"></div>
+							<div><img src="./img_LP/room_picture3.png" width="100%" height="100%"></div>
+							<div><img src="./img_LP/room_picture1.png" width="100%" height="100%"></div>
+							<div><img src="./img_LP/room_picture2.png" width="100%" height="100%"></div>
+							<div><img src="./img_LP/room_picture3.png" width="100%" height="100%"></div>
+						</div>
+						<div class="slider-nav">
+							<div><img src="./img_LP/room_picture1.png" width="100%" height="100%"></div>
+							<div><img src="./img_LP/room_picture2.png" width="100%" height="100%"></div>
+							<div><img src="./img_LP/room_picture3.png" width="100%" height="100%"></div>
+							<div><img src="./img_LP/room_picture1.png" width="100%" height="100%"></div>
+							<div><img src="./img_LP/room_picture2.png" width="100%" height="100%"></div>
+							<div><img src="./img_LP/room_picture3.png" width="100%" height="100%"></div>
+						</div>
+						
 		<div class="wrapper6" id="anchor4">
 			<div class="title">講師紹介</div>
 			<div class="content_list">
@@ -379,5 +407,10 @@
 	</div>
 
 	<script type="text/javascript" src="./js/introduction.js?20230526"></script>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="js/slider.js"></script> 
 </body>
 </html>

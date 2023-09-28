@@ -1,26 +1,40 @@
 $(document).ready(function(){
-    $('.slider-for').slick({
+    var $sliderNavImages = $('.slider-nav img');
+    $sliderNavImages.eq(0).addClass('selected-image');
+    var $sliderFor = $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         fade: true,
-        asNavFor: '.slider-nav',
-        // prevArrow:'<button type="button" class="prev">戻す</button>',
-        });
-    $('.slider-nav').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+    });
+
+    var $sliderNav = $('.slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        infinite: true,
         asNavFor: '.slider-for',
         arrows: false,
-        dots: true,
+        dots: false,
         centerMode: true,
         focusOnSelect: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        });
-
-        $('.slider-for').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-    var selectedImageSrc = $('.slider-nav div:nth-child(' + (nextSlide + 1) + ') img').attr('src');
-    $('.selected-image-container img').attr('src', selectedImageSrc);
-});
     });
+
+    // 画像がクリックされたときの処理
+    $sliderNavImages.click(function() {
+        // すべての画像から枠線を削除
+        $sliderNavImages.removeClass('selected-image');
+        // クリックされた画像に枠線を追加
+        $(this).addClass('selected-image');
+
+        // クリック時にautoplayを再開
+        $sliderFor.slick('slickPlay');
+    });
+
+    // Autoplayの場合、スライドが切り替わるたびに枠線を更新
+    $sliderFor.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $sliderNavImages.removeClass('selected-image');
+        $sliderNavImages.eq(nextSlide).addClass('selected-image');
+    });
+});

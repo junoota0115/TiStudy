@@ -697,6 +697,68 @@ header .right_content .ham_line2 {
 	background-color: #fff;
 	cursor: pointer;
 }
+/* デザイン10 */
+.wrapper10 {
+	width: 100%;
+	padding: 56px 40px;
+	background-color: #2D9CDB;
+	text-align: center;
+	color: #FFF;
+	font-family: 'M PLUS 1 Code';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%; /* 28px */
+	letter-spacing: 0.8px;
+}
+
+.wrapper10 .title_1{
+	font-size: 48px;
+	line-height: 140%; /* 67.2px */
+	letter-spacing: 1.92px;
+}
+
+.wrapper10 .sub_title{
+	text-align: left;
+}
+
+.wrapper10 .title_2{
+	font-size: 24px;
+	line-height: 140%; /* 33.6px */
+	letter-spacing: 0.96px;
+}
+.wrapper10 .title_3{
+	font-size: 32px;
+	line-height: 140%; /* 44.8px */
+	letter-spacing: 1.28px;
+}
+
+.wrapper10 .address{
+	display: flex;
+}
+
+.wrapper10 .address .address_pin img{
+	width: 40px;
+	height: 40px;
+	flex-shrink: 0;
+}
+
+.wrapper10 .address .address_2{
+	font-size: 32px;
+	line-height: 140%; /* 44.8px */
+	letter-spacing: 1.28px;
+}
+
+.wrapper10 .address .address_3{
+	font-size: 20px;
+	line-height: 140%; /* 28px */
+	letter-spacing: 0.8px;
+}
+
+.wrapper10 p{
+	font-size: 24px;
+	line-height: 140%; /* 33.6px */
+	letter-spacing: 0.96px;
+}
 
 /* デザイン５ */
 .wrapper5 {

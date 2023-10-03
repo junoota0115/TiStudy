@@ -301,13 +301,13 @@ header .right_content .ham_line2 {
 .wrapper1 .contact .button1 {
 	width: 400px;
 	color: #fff;
-	background-color: #03fc2c;
+	background-color: #26D758;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 	font-weight: bold;
 	padding: 1rem;
-	border: 1px solid #03fc2c;
-	border-radius: 40px;
+	border: 1px solid #26D758;
+	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
@@ -316,7 +316,7 @@ header .right_content .ham_line2 {
 }
 .wrapper1 .contact .button1:hover {
 	transition: all 0.3s;
-	color: #03fc2c;
+	color: #26D758;
 	background-color: #fff;
 	cursor: pointer;
 }
@@ -329,7 +329,7 @@ header .right_content .ham_line2 {
 	font-weight: bold;
 	padding: 1rem;
 	border: 1px solid #FF5613;
-	border-radius: 40px;
+	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
@@ -400,13 +400,13 @@ header .right_content .ham_line2 {
 .wrapper2 .contact .button1 {
 	width: 400px;
 	color: #fff;
-	background-color: #03fc2c;
+	background-color: #26D758;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 	font-weight: bold;
 	padding: 1rem;
-	border: 1px solid #03fc2c;
-	border-radius: 40px;
+	border: 1px solid #26D758;
+	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
@@ -415,7 +415,7 @@ header .right_content .ham_line2 {
 }
 .wrapper2 .contact .button1:hover {
 	transition: all 0.3s;
-	color: #03fc2c;
+	color: #26D758;
 	background-color: #fff;
 	cursor: pointer;
 }
@@ -428,7 +428,7 @@ header .right_content .ham_line2 {
 	font-weight: bold;
 	padding: 1rem;
 	border: 1px solid #FF5613;
-	border-radius: 40px;
+	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
@@ -656,13 +656,13 @@ header .right_content .ham_line2 {
 .wrapper4 .contact .button1 {
 	width: 400px;
 	color: #fff;
-	background-color: #03fc2c;
+	background-color: #26D758;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 	font-weight: bold;
 	padding: 1rem;
-	border: 1px solid #03fc2c;
-	border-radius: 40px;
+	border: 1px solid #26D758;
+	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
@@ -671,7 +671,7 @@ header .right_content .ham_line2 {
 }
 .wrapper4 .contact .button1:hover {
 	transition: all 0.3s;
-	color: #03fc2c;
+	color: #26D758;
 	background-color: #fff;
 	cursor: pointer;
 }
@@ -684,7 +684,7 @@ header .right_content .ham_line2 {
 	font-weight: bold;
 	padding: 1rem;
 	border: 1px solid #FF5613;
-	border-radius: 40px;
+	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
@@ -696,6 +696,73 @@ header .right_content .ham_line2 {
 	color: #FF5613;
 	background-color: #fff;
 	cursor: pointer;
+}
+/* デザイン10 */
+.wrapper10 {
+	width: 100%;
+	padding: 56px 340px;
+	background-color: #2D9CDB;
+	text-align: center;
+	color: #FFF;
+	font-family: 'M PLUS 1 Code';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%; /* 28px */
+	letter-spacing: 0.8px;
+}
+
+.wrapper10 .title_1{
+	padding-bottom: 48px;
+	font-size: 48px;
+	line-height: 140%; /* 67.2px */
+	letter-spacing: 1.92px;
+}
+
+.wrapper10 .sub_title{
+	text-align: left;
+}
+
+.wrapper10 .title_2{
+	font-size: 24px;
+	line-height: 140%; /* 33.6px */
+	letter-spacing: 0.96px;
+}
+.wrapper10 .title_3{
+	font-size: 32px;
+	line-height: 140%; /* 44.8px */
+	letter-spacing: 1.28px;
+}
+
+.wrapper10 .address{
+	display: flex;
+	padding-top: 8px;
+}
+
+.wrapper10 .address .address_pin img{
+	width: 40px;
+	height: 40px;
+	flex-shrink: 0;
+}
+
+.wrapper10 .address .address_2{
+	font-size: 32px;
+	padding-bottom: 24px;
+	line-height: 140%; /* 44.8px */
+	letter-spacing: 1.28px;
+}
+
+.wrapper10 .address_3{
+	font-size: 20px;
+	padding-bottom: 40px;
+	line-height: 140%; /* 28px */
+	letter-spacing: 0.8px;
+}
+
+.wrapper10 p{
+	font-size: 24px;
+	padding-bottom: 16px;
+	line-height: 140%; /* 33.6px */
+	letter-spacing: 0.96px;
 }
 
 /* デザイン５ */
@@ -829,13 +896,13 @@ header .right_content .ham_line2 {
 .wrapper6 .contact .button1 {
 	width: 400px;
 	color: #fff;
-	background-color: #03fc2c;
+	background-color: #26D758;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 	font-weight: bold;
 	padding: 1rem;
-	border: 1px solid #03fc2c;
-	border-radius: 40px;
+	border: 1px solid #26D758;
+	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
@@ -844,7 +911,7 @@ header .right_content .ham_line2 {
 }
 .wrapper6 .contact .button1:hover {
 	transition: all 0.3s;
-	color: #03fc2c;
+	color: #26D758;
 	background-color: #fff;
 	cursor: pointer;
 }
@@ -857,7 +924,7 @@ header .right_content .ham_line2 {
 	font-weight: bold;
 	padding: 1rem;
 	border: 1px solid #FF5613;
-	border-radius: 40px;
+	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;

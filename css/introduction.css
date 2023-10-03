@@ -700,7 +700,7 @@ header .right_content .ham_line2 {
 /* デザイン10 */
 .wrapper10 {
 	width: 100%;
-	padding: 56px 40px;
+	padding: 56px 340px;
 	background-color: #2D9CDB;
 	text-align: center;
 	color: #FFF;
@@ -712,6 +712,7 @@ header .right_content .ham_line2 {
 }
 
 .wrapper10 .title_1{
+	padding-bottom: 48px;
 	font-size: 48px;
 	line-height: 140%; /* 67.2px */
 	letter-spacing: 1.92px;
@@ -734,6 +735,7 @@ header .right_content .ham_line2 {
 
 .wrapper10 .address{
 	display: flex;
+	padding-top: 8px;
 }
 
 .wrapper10 .address .address_pin img{
@@ -744,18 +746,21 @@ header .right_content .ham_line2 {
 
 .wrapper10 .address .address_2{
 	font-size: 32px;
+	padding-bottom: 24px;
 	line-height: 140%; /* 44.8px */
 	letter-spacing: 1.28px;
 }
 
-.wrapper10 .address .address_3{
+.wrapper10 .address_3{
 	font-size: 20px;
+	padding-bottom: 40px;
 	line-height: 140%; /* 28px */
 	letter-spacing: 0.8px;
 }
 
 .wrapper10 p{
 	font-size: 24px;
+	padding-bottom: 16px;
 	line-height: 140%; /* 33.6px */
 	letter-spacing: 0.96px;
 }

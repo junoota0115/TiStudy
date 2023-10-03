@@ -37,4 +37,37 @@ $(document).ready(function(){
         $sliderNavImages.removeClass('selected-image');
         $sliderNavImages.eq(nextSlide).addClass('selected-image');
     });
+
+
+});
+
+$(document).ready(function(){
+$sliderMain = $('.slider-main').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+});
 });

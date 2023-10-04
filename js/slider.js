@@ -4,7 +4,7 @@ $(document).ready(function(){
     var $sliderFor = $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         fade: true,
         autoplay: true,
         autoplaySpeed: 3000,

@@ -848,9 +848,11 @@ header .right_content .ham_line2 {
 /* デザイン６ */
 .wrapper6 {
 	width: 100%;
-	padding: 56px 40px;
+	padding: 56px 152px;
 	background-color: #FDFEFF;
 	text-align: center;
+	font-family: 'M PLUS 1 Code';
+	font-weight: 400;
 }
 .wrapper6 .title {
 	font-size: 3rem;
@@ -862,16 +864,16 @@ header .right_content .ham_line2 {
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: stretch;
-	gap: 24px;
+	gap: 80px;
 	margin-top: 24px;
 	margin-bottom: 56px;
 }
 .wrapper6 .content_list .content {
-	background-color: #CFEEFF;
-	flex: 0 0 400px;
-	padding: 24px;
+	background-color: #D5EBF8;
+	flex: 0 0 528px;
+	padding: 40px 80px;
 	color: #393939;
-	border-radius: 8px;
+	border-radius: 24px;
 }
 .wrapper6 .content_list .content .icon {
 	width: 200px;
@@ -894,6 +896,8 @@ header .right_content .ham_line2 {
 	/* font-size: 20px; */
 	margin-top: 4px;
 	text-align: left;
+	line-height: 140%; /* 28px */
+	letter-spacing: 0.8px;
 }
 .wrapper6 .contact .subtext {
 	font-size: 2rem;
@@ -904,13 +908,20 @@ header .right_content .ham_line2 {
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 }
+
+.wrapper6 .contact .applybtn span {
+	font-size: 24px;
+	font-weight:600;
+	font-family: 'M PLUS 1 Code';
+	font-style: normal;
+	line-height: 120%; /* 28.8px */
+}
 .wrapper6 .contact .button1 {
 	width: 400px;
 	color: #fff;
 	background-color: #26D758;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
-	font-weight: bold;
 	padding: 1rem;
 	border: 1px solid #26D758;
 	border-radius: 24px;
@@ -932,7 +943,7 @@ header .right_content .ham_line2 {
 	background-color: #FF5613;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
-	font-weight: bold;
+	font-weight: 600;
 	padding: 1rem;
 	border: 1px solid #FF5613;
 	border-radius: 24px;

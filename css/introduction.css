@@ -298,6 +298,14 @@ header .right_content .ham_line2 {
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 }
+.wrapper1 .contact .applybtn span {
+	font-size: 24px;
+	font-weight:600;
+	font-family: 'M PLUS 1 Code';
+	font-style: normal;
+	line-height: 120%; /* 28.8px */
+}
+
 .wrapper1 .contact .button1 {
 	width: 400px;
 	color: #fff;
@@ -395,6 +403,14 @@ header .right_content .ham_line2 {
 .wrapper2 .contact .subtext span {
 	font-size: 1.5rem;
 	/* font-size: 24px; */
+}
+
+.wrapper2 .contact .applybtn span {
+	font-size: 24px;
+	font-weight:600;
+	font-family: 'M PLUS 1 Code';
+	font-style: normal;
+	line-height: 120%; /* 28.8px */
 }
 
 .wrapper2 .contact .button1 {
@@ -653,6 +669,14 @@ header .right_content .ham_line2 {
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 }
+.wrapper4 .contact .applybtn span {
+	font-size: 24px;
+	font-weight:600;
+	font-family: 'M PLUS 1 Code';
+	font-style: normal;
+	line-height: 120%; /* 28.8px */
+}
+
 .wrapper4 .contact .button1 {
 	width: 400px;
 	color: #fff;

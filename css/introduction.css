@@ -294,6 +294,9 @@ header .right_content .ham_line2 {
 	/* font-size: 32px; */
 	color: #FF5613;
 }
+.wrapper1 .contact {
+	padding-bottom: 56px;
+}
 .wrapper1 .contact .subtext span {
 	font-size: 1.5rem;
 	/* font-size: 24px; */

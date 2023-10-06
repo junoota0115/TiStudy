@@ -49,6 +49,8 @@ $sliderMain = $('.slider-main').slick({
     autoplay: true,
     autoplaySpeed: 3000,
     slidesToShow: 1,
+    prevArrow: $('.custom-prev-arrow'), // カスタム矢印を指定
+    nextArrow: $('.custom-next-arrow'), // カスタム矢印を指定
     responsive: [
       {
         breakpoint: 768,

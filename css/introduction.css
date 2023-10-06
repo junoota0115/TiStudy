@@ -1030,6 +1030,29 @@ header .right_content .ham_line2 {
     margin: 0 5px;
 }
 
+.slider-container {
+	position: relative;
+  }
+  
+  .custom-arrows {
+	display: flex;
+	justify-content: space-around;
+	transform: translateY(-50%);
+
+  }
+  
+  .custom-prev-arrow,
+  .custom-next-arrow {
+	font-size: 24px;
+	cursor: pointer;
+  }
+  
+  .custom-next-arrow {
+	margin-left: 20px; /* 矢印間のスペースを調整 */
+  }
+
+
+
 /* 動画をレスポンシブに調整 */
 iframe {
     max-width: 100%;

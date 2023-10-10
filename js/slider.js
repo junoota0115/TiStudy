@@ -49,7 +49,7 @@ $(document).ready(function () {
   // スライダーの初期化
   $sliderMain.slick({
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '200px',
     dots: true,
     autoplay: true, // 自動再生を無効化
     autoplaySpeed: 5000,
@@ -62,7 +62,7 @@ $(document).ready(function () {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '200px',
           slidesToShow: 3
         }
       },
@@ -71,7 +71,7 @@ $(document).ready(function () {
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
+          centerPadding: '100px',
           slidesToShow: 1
         }
       }

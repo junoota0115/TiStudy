@@ -999,13 +999,25 @@ header .right_content .ham_line2 {
     justify-content: center;
 }
 
-.wrapper9 h1{
+.slider-container {
+	position: relative;
+  }
+  
+
+.wrapper9 p{
 	padding-top: 56px;
+	color: #FFF;
+	font-family: 'M PLUS 1 Code';
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%; /* 67.2px */
+	letter-spacing: 1.92px;
 }
 
 .wrapper9 .slider-main {
     width: 100%;
-    max-width: 800px; /* 動画の最大幅を設定 */
+    max-width: 1000px; /* 動画の最大幅を設定 */
     height: auto;
 }
 
@@ -1038,10 +1050,7 @@ header .right_content .ham_line2 {
     margin: 0 5px;
 }
 
-.slider-container {
-	position: relative;
-  }
-  
+
   .custom-arrows {
 	display: flex;
 	justify-content: space-around;

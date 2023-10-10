@@ -999,15 +999,23 @@ header .right_content .ham_line2 {
     justify-content: center;
 }
 
+.wrapper9 h1{
+	padding-top: 56px;
+}
+
 .wrapper9 .slider-main {
     width: 100%;
-    max-width: 640px; /* 動画の最大幅を設定 */
+    max-width: 800px; /* 動画の最大幅を設定 */
     height: auto;
 }
 
 .wrapper9 .slider-main iframe {
     width: 800px; /* 幅を調整 */
     height: 450px; /* 高さを調整 */
+	border-radius: 12px;
+    background-color: white; /* 白色の背景を設定 */
+	margin: 30px;
+	padding: 40px 32px 64px 32px;
 }
 
 /* Slick Sliderのスタイルを調整 */

@@ -7,7 +7,7 @@ $(document).ready(function(){
         arrows: true,
         fade: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
     });
 
     var $sliderNav = $('.slider-nav').slick({
@@ -41,13 +41,18 @@ $(document).ready(function(){
 
 });
 
-$(document).ready(function(){
-$sliderMain = $('.slider-main').slick({
+$(document).ready(function () {
+  var $sliderMain = $('.slider-main');
+  var $iframeVideos = $sliderMain.find('iframe');
+  var isVideoPlaying = false;
+
+  // スライダーの初期化
+  $sliderMain.slick({
     centerMode: true,
     centerPadding: '60px',
     dots: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    autoplay: true, // 自動再生を無効化
+    autoplaySpeed: 5000,
     slidesToShow: 1,
     prevArrow: $('.custom-prev-arrow'), // カスタム矢印を指定
     nextArrow: $('.custom-next-arrow'), // カスタム矢印を指定
@@ -71,5 +76,26 @@ $sliderMain = $('.slider-main').slick({
         }
       }
     ]
-});
+  });
+
+  // 動画再生イベントの監視
+  $iframeVideos.on('play', function () {
+    isVideoPlaying = true;
+  });
+
+  $iframeVideos.on('pause ended', function () {
+    isVideoPlaying = false;
+    // 動画が停止したら、スライダーのautoplayを有効にする
+    $sliderMain.slick('slickPlay');
+  });
+
+  // スライダーの前後矢印がクリックされたときのイベント
+  $sliderMain.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    // 動画が再生中でない場合、スライド切り替えを許可する
+    if (!isVideoPlaying) {
+      return true;
+    }
+    // 動画が再生中の場合、スライド切り替えをキャンセル
+    event.preventDefault();
+  });
 });

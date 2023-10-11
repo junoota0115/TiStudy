@@ -729,7 +729,7 @@ header .right_content .ham_line2 {
 /* デザイン10 */
 .wrapper10 {
 	width: 100%;
-	padding: 56px 340px;
+	
 	background-color: #2D9CDB;
 	text-align: center;
 	color: #FFF;
@@ -740,6 +740,9 @@ header .right_content .ham_line2 {
 	letter-spacing: 0.8px;
 }
 
+.wrapper10 .title{
+	padding: 56px 340px 0px 340px;
+}
 .wrapper10 .title_1{
 	padding-bottom: 48px;
 	font-size: 48px;
@@ -794,16 +797,24 @@ header .right_content .ham_line2 {
 	letter-spacing: 0.96px;
 }
 
-.wrapper10 .slider-for img{
-	width: 760px;
-	height:544px;
-	padding-bottom: 32px;
+.wrapper10 .slider-for {
+	margin: 16px 320px 34px 320px;
 }
 
-/* .wrapper10 .slider-nav img{
+.wrapper10 .slider-for img{
+	width: 777px;
+	height:544px;
+}
+
+.wrapper10 .slider-nav{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 56px;
+}
+.wrapper10 .slider-nav img{
 	width: 237px;
 	height:160px;
-} */
+}
 
 /* デザイン５ */
 .wrapper5 {

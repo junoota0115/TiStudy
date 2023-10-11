@@ -1061,26 +1061,31 @@ header .right_content .ham_line2 {
 .slick-dots li {
     display: inline-block;
     margin: 0 5px;
+	color: #FFF;
 }
 
 
   .custom-arrows {
 	display: flex;
-	justify-content: space-around;
+	justify-content:space-evenly;
 	transform: translateY(-50%);
 
   }
   
   .custom-prev-arrow,
   .custom-next-arrow {
-	font-size: 24px;
-	cursor: pointer;
-  }
-  
-  .custom-next-arrow {
-	margin-left: 20px; /* 矢印間のスペースを調整 */
-  }
-
+	  font-size: 24px;
+	  cursor: pointer;
+	}
+	
+	.custom-next-arrow {
+		margin-left: 20px; /* 矢印間のスペースを調整 */
+	}
+	
+	.custom-prev-arrow img,
+	.custom-next-arrow img {
+		width: 70px;
+	}
 
 
 /* 動画をレスポンシブに調整 */

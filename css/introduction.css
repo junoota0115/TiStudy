@@ -999,15 +999,35 @@ header .right_content .ham_line2 {
     justify-content: center;
 }
 
+.slider-container {
+	position: relative;
+  }
+  
+
+.wrapper9 p{
+	padding-top: 56px;
+	color: #FFF;
+	font-family: 'M PLUS 1 Code';
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%; /* 67.2px */
+	letter-spacing: 1.92px;
+}
+
 .wrapper9 .slider-main {
     width: 100%;
-    max-width: 640px; /* 動画の最大幅を設定 */
+    max-width: 1000px; /* 動画の最大幅を設定 */
     height: auto;
 }
 
 .wrapper9 .slider-main iframe {
     width: 800px; /* 幅を調整 */
     height: 450px; /* 高さを調整 */
+	border-radius: 12px;
+    background-color: white; /* 白色の背景を設定 */
+	margin: 30px;
+	padding: 40px 32px 64px 32px;
 }
 
 /* Slick Sliderのスタイルを調整 */
@@ -1029,6 +1049,26 @@ header .right_content .ham_line2 {
     display: inline-block;
     margin: 0 5px;
 }
+
+
+  .custom-arrows {
+	display: flex;
+	justify-content: space-around;
+	transform: translateY(-50%);
+
+  }
+  
+  .custom-prev-arrow,
+  .custom-next-arrow {
+	font-size: 24px;
+	cursor: pointer;
+  }
+  
+  .custom-next-arrow {
+	margin-left: 20px; /* 矢印間のスペースを調整 */
+  }
+
+
 
 /* 動画をレスポンシブに調整 */
 iframe {

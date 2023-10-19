@@ -51,7 +51,7 @@ $(document).ready(function () {
     centerMode: true,
     centerPadding: '200px',
     dots: true,
-    autoplay: true, // 自動再生を無効化
+    autoplay: false, // 自動再生を無効化
     autoplaySpeed: 5000,
     slidesToShow: 1,
     prevArrow: $('.custom-prev-arrow'), // カスタム矢印を指定

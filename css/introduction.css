@@ -7,7 +7,6 @@ SP ～820
 
 /* 共通 */
 * {
-	/* font-family: "FOT-TsukuARdGothic Std", "M PLUS Rounded 1c", system-ui; */
 	font-family: "M PLUS Rounded 1c", system-ui;
 	margin: 0;
 	padding: 0;
@@ -268,9 +267,10 @@ header .right_content .ham_line2 {
 	align-items: center;
 	gap: 112px;
 	padding: 17.5px 24px;
-	border-bottom: 2px solid rgba(45, 156, 219, 0.2);
+	/* border-bottom: 2px solid rgba(45, 156, 219, 0.2); */
 	user-select: none;
 }
+
 .wrapper1 .information .list_data:hover {
 	color: #FF5613;
 	cursor: pointer;
@@ -1012,11 +1012,6 @@ header .right_content .ham_line2 {
     justify-content: center;
 }
 
-.slider-container {
-	position: relative;
-  }
-  
-
 .wrapper9 p{
 	padding-top: 56px;
 	color: #FFF;
@@ -1028,10 +1023,14 @@ header .right_content .ham_line2 {
 	letter-spacing: 1.92px;
 }
 
+.slider-container {
+	width: 100%;
+  }
+
+
 .wrapper9 .slider-main {
-    width: 100%;
-    max-width: 1000px; /* 動画の最大幅を設定 */
-    height: auto;
+	height: auto;
+	width: 100%;
 }
 
 .wrapper9 .slider-main iframe {
@@ -1041,7 +1040,19 @@ header .right_content .ham_line2 {
     background-color: white; /* 白色の背景を設定 */
 	margin: 30px;
 	padding: 40px 32px 64px 32px;
+	/* transform: scale(.8); */
 }
+
+.slider-main .slick-center iframe {
+	width: 760px; /* 通常の幅 */
+	height: 553px; /* 通常の高さ */
+  }
+  
+  /* サイドに表示される要素のサイズ */
+  .slider-main iframe:not(.slick-center) {
+	width: 520px; 
+	height: 402px; 
+  }
 
 /* Slick Sliderのスタイルを調整 */
 .slick-slide {
@@ -1062,6 +1073,12 @@ header .right_content .ham_line2 {
     display: inline-block;
     margin: 0 5px;
 	color: #FFF;
+}
+
+/* ドットの大きさを変更 */
+.slick-dots li button {
+    width: 10px; /* ドットの幅 */
+    height: 10px; /* ドットの高さ */
 }
 
 

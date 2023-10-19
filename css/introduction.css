@@ -59,6 +59,17 @@ header {
 header .left_content {
 	flex-basis: 80px;
 	height: 80px;
+	display: flex;
+}
+header .left_content .main_title{
+color: #FFF;
+text-align: right;
+font-family:'Rounded Mplus 1c';
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 89.6px */
+padding-left: 50px;
 }
 header .right_content {
 	display: flex;
@@ -1052,6 +1063,7 @@ header .right_content .ham_line2 {
   .slider-main iframe:not(.slick-center) {
 	width: 520px; 
 	height: 402px; 
+	margin-top: 50px;
   }
 
 /* Slick Sliderのスタイルを調整 */
@@ -1096,12 +1108,12 @@ header .right_content .ham_line2 {
 	}
 	
 	.custom-next-arrow {
-		margin-left: 20px; /* 矢印間のスペースを調整 */
+		margin-left: -300px; /* 矢印間のスペースを調整 */
 	}
 	
 	.custom-prev-arrow img,
 	.custom-next-arrow img {
-		width: 70px;
+		width: 90px;
 	}
 
 

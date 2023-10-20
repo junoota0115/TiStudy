@@ -49,21 +49,21 @@ $(document).ready(function () {
   // スライダーの初期化
   $sliderMain.slick({
     centerMode: true,
-    centerPadding: '200px',
+    centerPadding: '350px',
     dots: true,
-    autoplay: false, // 自動再生を無効化
-    autoplaySpeed: 5000,
+    autoplay: true, // 自動再生を無効化
+    autoplaySpeed: 7000,
     slidesToShow: 1,
     prevArrow: $('.custom-prev-arrow'), // カスタム矢印を指定
     nextArrow: $('.custom-next-arrow'), // カスタム矢印を指定
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 900,
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '200px',
-          slidesToShow: 3
+          centerPadding: '0px',
+          slidesToShow: 1
         }
       },
       {

@@ -64,7 +64,6 @@ header .left_content {
 header .left_content .main_title{
 color: #FFF;
 text-align: right;
-font-family:'Rounded Mplus 1c';
 font-size: 64px;
 font-style: normal;
 font-weight: 400;
@@ -303,9 +302,14 @@ header .right_content .ham_line2 {
 }
 
 .wrapper1 .contact .subtext {
-	font-size: 2rem;
-	/* font-size: 32px; */
-	color: #FF5613;
+color: #FF5613;
+text-align: center;
+font-size: 2rem;
+/* font-size: 32px; */
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 38.4px */
+letter-spacing: 1.28px;
 }
 .wrapper1 .contact {
 	padding-bottom: 56px;
@@ -324,19 +328,21 @@ header .right_content .ham_line2 {
 
 .wrapper1 .contact .button1 {
 	width: 400px;
+	height: 80px;
 	color: #fff;
 	background-color: #26D758;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
-	font-weight: bold;
-	padding: 1rem;
+	font-style: normal;
+	font-weight: 500;
+	padding: 20px;
 	border: 1px solid #26D758;
 	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
 	display: inline-block; /* ボタンを横並びに配置 */
-    margin-right: 0; /* ボタン間の横の感覚を0にする */
+    margin-right: 16px; /* ボタン間の横の間隔 */
 }
 .wrapper1 .contact .button1:hover {
 	transition: all 0.3s;
@@ -346,19 +352,20 @@ header .right_content .ham_line2 {
 }
 .wrapper1 .contact .button2 {
 	width: 400px;
+	height: 80px;
 	color: #fff;
 	background-color: #FF5613;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 	font-weight: bold;
-	padding: 1rem;
+	padding: 20px;
 	border: 1px solid #FF5613;
 	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
 	display: inline-block; /* ボタンを横並びに配置 */
-    margin-right: 0; /* ボタン間の横の感覚を0にする */
+    margin-right: 0; /* ボタン間の横の間隔 */
 }
 .wrapper1 .contact .button2:hover {
 	transition: all 0.3s;
@@ -431,19 +438,20 @@ header .right_content .ham_line2 {
 
 .wrapper2 .contact .button1 {
 	width: 400px;
+	height: 80px;
 	color: #fff;
 	background-color: #26D758;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 	font-weight: bold;
-	padding: 1rem;
+	padding: 20px;
 	border: 1px solid #26D758;
 	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
 	display: inline-block; /* ボタンを横並びに配置 */
-    margin-right: 0; /* ボタン間の横の感覚を0にする */
+    margin-right: 16px; /* ボタン間の横の間隔 */
 }
 .wrapper2 .contact .button1:hover {
 	transition: all 0.3s;
@@ -453,19 +461,20 @@ header .right_content .ham_line2 {
 }
 .wrapper2 .contact .button2 {
 	width: 400px;
+	height: 80px;
 	color: #fff;
 	background-color: #FF5613;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 	font-weight: bold;
-	padding: 1rem;
+	padding: 20px;
 	border: 1px solid #FF5613;
 	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
 	display: inline-block; /* ボタンを横並びに配置 */
-    margin-right: 0; /* ボタン間の横の感覚を0にする */
+    margin-right: 16px; /* ボタン間の横の間隔 */
 }
 .wrapper2 .contact .button2:hover {
 	transition: all 0.3s;
@@ -695,19 +704,20 @@ header .right_content .ham_line2 {
 
 .wrapper4 .contact .button1 {
 	width: 400px;
+	height: 80px;
 	color: #fff;
 	background-color: #26D758;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 	font-weight: bold;
-	padding: 1rem;
+	padding: 20px;
 	border: 1px solid #26D758;
 	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
 	display: inline-block; /* ボタンを横並びに配置 */
-    margin-right: 0; /* ボタン間の横の感覚を0にする */
+    margin-right: 16px; /* ボタン間の横の間隔 */
 }
 .wrapper4 .contact .button1:hover {
 	transition: all 0.3s;
@@ -717,19 +727,20 @@ header .right_content .ham_line2 {
 }
 .wrapper4 .contact .button2 {
 	width: 400px;
+	height: 80px;
 	color: #fff;
 	background-color: #FF5613;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 	font-weight: bold;
-	padding: 1rem;
+	padding: 20px;
 	border: 1px solid #FF5613;
 	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
 	display: inline-block; /* ボタンを横並びに配置 */
-    margin-right: 0; /* ボタン間の横の感覚を0にする */
+    margin-right: 16px; /* ボタン間の横の間隔 */
 }
 .wrapper4 .contact .button2:hover {
 	transition: all 0.3s;
@@ -969,18 +980,19 @@ header .right_content .ham_line2 {
 }
 .wrapper6 .contact .button1 {
 	width: 400px;
+	height: 80px;
 	color: #fff;
 	background-color: #26D758;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
-	padding: 1rem;
+	padding: 20px;
 	border: 1px solid #26D758;
 	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
 	display: inline-block; /* ボタンを横並びに配置 */
-    margin-right: 0; /* ボタン間の横の感覚を0にする */
+    margin-right: 16px; /* ボタン間の横の間隔 */
 }
 .wrapper6 .contact .button1:hover {
 	transition: all 0.3s;
@@ -990,19 +1002,20 @@ header .right_content .ham_line2 {
 }
 .wrapper6 .contact .button2 {
 	width: 400px;
+	height: 80px;
 	color: #fff;
 	background-color: #FF5613;
 	font-size: 1.5rem;
 	/* font-size: 24px; */
 	font-weight: 600;
-	padding: 1rem;
+	padding: 20px;
 	border: 1px solid #FF5613;
 	border-radius: 24px;
 	white-space: nowrap;
 	user-select: none;
 	margin: 24px auto 0;
 	display: inline-block; /* ボタンを横並びに配置 */
-    margin-right: 0; /* ボタン間の横の感覚を0にする */
+    margin-right: 16px; /* ボタン間の横の間隔 */
 }
 .wrapper6 .contact .button2:hover {
 	transition: all 0.3s;
@@ -1072,23 +1085,23 @@ header .right_content .ham_line2 {
 }
 
 /* ドットナビゲーションのスタイルを調整 */
-.slick-dots {
+.slider-dots {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 0;
     right: 0;
     text-align: center;
     list-style: none;
 }
 
-.slick-dots li {
+.slider-dots li {
     display: inline-block;
     margin: 0 5px;
 	color: #FFF;
 }
 
 /* ドットの大きさを変更 */
-.slick-dots li button {
+.slider-dots li button {
     width: 10px; /* ドットの幅 */
     height: 10px; /* ドットの高さ */
 }
@@ -1662,6 +1675,118 @@ footer .history {
 		padding: 0.75rem 0;
 		margin-top: 8px;
 	}
+
+	.wrapper9 {/*動画欄*/
+    width: 100%;
+    /* height: 100vh; */
+    min-height: 600px;
+    background-color: #2D9CDB;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper9 p{
+	padding-top: 56px;
+	color: #FFF;
+	font-family: 'M PLUS 1 Code';
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%; /* 67.2px */
+	letter-spacing: 1.92px;
+}
+
+.slider-container {
+	width: 100%;
+  }
+
+
+.wrapper9 .slider-main {
+	height: auto;
+	width: 100%;
+}
+
+.wrapper9 .slider-main iframe {
+    width: 800px; /* 幅を調整 */
+    height: 450px; /* 高さを調整 */
+	border-radius: 12px;
+    background-color: white; /* 白色の背景を設定 */
+	margin: 30px;
+	padding: 40px 32px 64px 32px;
+	/* transform: scale(.8); */
+}
+
+.slider-main .slick-center iframe {
+	width: 760px; /* 通常の幅 */
+	height: 553px; /* 通常の高さ */
+  }
+  
+  /* サイドに表示される要素のサイズ */
+  .slider-main iframe:not(.slick-center) {
+	width: 520px; 
+	height: 402px; 
+	margin-top: 50px;
+  }
+
+/* Slick Sliderのスタイルを調整 */
+.slick-slide {
+    padding: 0 15px; /* スライドの間隔を調整 */
+}
+
+/* ドットナビゲーションのスタイルを調整 */
+.slider-dots {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    list-style: none;
+}
+
+.slider-dots li {
+    display: inline-block;
+    margin: 0 5px;
+	color: #FFF;
+}
+
+/* ドットの大きさを変更 */
+.slider-dots li button {
+    width: 10px; /* ドットの幅 */
+    height: 10px; /* ドットの高さ */
+}
+
+
+  .custom-arrows {
+	display: flex;
+	justify-content:space-evenly;
+	transform: translateY(-50%);
+
+  }
+  
+  .custom-prev-arrow,
+  .custom-next-arrow {
+	  font-size: 24px;
+	  cursor: pointer;
+	}
+	
+	.custom-next-arrow {
+		margin-left: -300px; /* 矢印間のスペースを調整 */
+	}
+	
+	.custom-prev-arrow img,
+	.custom-next-arrow img {
+		width: 90px;
+	}
+
+
+/* 動画をレスポンシブに調整 */
+iframe {
+    max-width: 100%;
+    height: auto;
+}
 
 
 	/* フッター */

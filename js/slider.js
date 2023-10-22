@@ -8,6 +8,7 @@ $(document).ready(function(){
         fade: true,
         autoplay: true,
         autoplaySpeed: 5000,
+
     });
 
     var $sliderNav = $('.slider-nav').slick({
@@ -58,7 +59,7 @@ $(document).ready(function () {
     nextArrow: $('.custom-next-arrow'), // カスタム矢印を指定
     responsive: [
       {
-        breakpoint: 900,
+        breakpoint: 800,
         settings: {
           arrows: false,
           centerMode: true,
@@ -67,7 +68,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 280,
         settings: {
           arrows: false,
           centerMode: true,
@@ -78,14 +79,14 @@ $(document).ready(function () {
     ]
   });
 
-  // 動画再生イベントの監視
+
   $iframeVideos.on('play', function () {
     isVideoPlaying = true;
   });
 
   $iframeVideos.on('pause ended', function () {
     isVideoPlaying = false;
-    // 動画が停止したら、スライダーのautoplayを有効にする
+    // 動画が停止したら、autoplayを有効にする
     $sliderMain.slick('slickPlay');
   });
 

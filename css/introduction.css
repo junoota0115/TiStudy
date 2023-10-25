@@ -1117,7 +1117,8 @@ letter-spacing: 1.28px;
 
   .custom-arrows {
 	display: flex;
-	justify-content:space-evenly;
+	justify-content:center;
+	gap:150px;
 	transform: translateY(-50%);
 
   }
@@ -1129,8 +1130,8 @@ letter-spacing: 1.28px;
 	}
 	
 	.custom-next-arrow {
-		margin-left: -300px; /* 矢印間のスペースを調整 */
-	}
+		/* margin-left: -300px;  */
+		}
 	
 	.custom-prev-arrow img,
 	.custom-next-arrow img {
@@ -1360,6 +1361,16 @@ footer .history {
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 8px;
+	}
+
+	.wrapper1 .information .list_data .data_date{
+		border-bottom: 0px solid rgba(45, 156, 219, 0.2);
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.wrapper1 .information .list_data .data_title{
+		border-bottom: 2px solid rgba(45, 156, 219, 0.2);
+		padding-right: 0px;
 	}
 	.wrapper1 .information .list_data:active {
 		color: #FF5613;
@@ -1961,7 +1972,7 @@ footer .history {
   .slider-main iframe:not(.slick-center) {
 	width: 520px; 
 	height: 194px; 
-	margin-top: 50px;
+	/* margin-top: 50px; */
   }
 
 /* Slick Sliderのスタイルを調整 */
@@ -1994,8 +2005,10 @@ footer .history {
 
   .custom-arrows {
 	display: flex;
-	justify-content:space-between;
-	transform: translateY(-50%);
+	/* justify-content:space-between; */
+	/* margin: 0px 50px; */
+	gap: 100px;
+	transform: translateY(-42%);
 
   }
   
@@ -2006,7 +2019,7 @@ footer .history {
 	}
 	
 	.custom-next-arrow {
-		margin-left: -300px; /* 矢印間のスペースを調整 */
+		margin-left: 0px; /* 矢印間のスペースを調整 */
 	}
 	
 	.custom-prev-arrow img,

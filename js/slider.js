@@ -1,3 +1,4 @@
+//授業場所//
 $(document).ready(function(){
     var $sliderNavImages = $('.slider-nav img');
     $sliderNavImages.eq(0).addClass('selected-image');
@@ -38,10 +39,9 @@ $(document).ready(function(){
         $sliderNavImages.removeClass('selected-image');
         $sliderNavImages.eq(nextSlide).addClass('selected-image');
     });
-
-
 });
 
+//無料動画//
 $(document).ready(function () {
   var $sliderMain = $('.slider-main');
   var $iframeVideos = $sliderMain.find('iframe');

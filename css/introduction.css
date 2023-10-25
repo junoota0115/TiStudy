@@ -275,12 +275,20 @@ header .right_content .ham_line2 {
 	flex-wrap: nowrap;
 	justify-content:center;
 	align-items: center;
-	gap: 112px;
+	/* gap: 112px; */
 	padding: 17.5px 24px;
 	/* border-bottom: 2px solid rgba(45, 156, 219, 0.2); */
 	user-select: none;
 }
-
+.wrapper1 .information .list_data .data_date{
+	border-bottom: 2px solid rgba(45, 156, 219, 0.2);
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.wrapper1 .information .list_data .data_title{
+	border-bottom: 2px solid rgba(45, 156, 219, 0.2);
+	padding-right: 40px;
+}
 .wrapper1 .information .list_data:hover {
 	color: #FF5613;
 	cursor: pointer;

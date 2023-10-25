@@ -195,7 +195,8 @@
     text-align: center;
 
     opacity: .25;
-    color: black;
+    /* color: rgb(254, 253, 253); */
+    color: #BDBDBD;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -203,5 +204,63 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    /* color: black; */
+    color: #ffffff;
+}
+
+
+/* SP版 */
+@media (max-width: 820px) {
+    .slick-prev
+    {
+        /* left: 35px; */
+        left: 30px;
+    }
+    [dir='rtl'] .slick-prev
+    {
+        right: -25px;
+        left: auto;
+    }
+    .slick-prev:before
+    {
+        content: '←';
+    }
+    [dir='rtl'] .slick-prev:before
+    {
+        content: '→';
+    }
+    
+    .slick-next
+    {
+        /* right: 35px; */
+        right: 50px;
+    }
+    [dir='rtl'] .slick-next
+    {
+        right: auto;
+        left: -25px;
+    }
+    .slick-next:before
+    {
+        content: '→';
+    }
+    [dir='rtl'] .slick-next:before
+    {
+        content: '←';
+    }
+
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+
+    opacity: .75;
+    color: rgb(0, 0, 0);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 }

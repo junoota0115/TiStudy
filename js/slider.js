@@ -147,8 +147,25 @@ $(document).ready(function(){
       $sliderNavImages.eq(nextSlide).addClass('selected-image');
   });
 
+  $(document).ready(function () {
+    var sliderFor = $('.slider-for');
+    var texts = ['アーク笹出外観', '授業場所', '授業場所'];
 
+    // スライダーの初期化
+    sliderFor.slick({
+      // ここにスライダーのオプションを追加
+    });
+
+    // スライドが切り替わる前にテキストを更新
+    sliderFor.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+      var textElement = sliderFor.find('p').eq(nextSlide);
+      textElement.text(texts[nextSlide]);
+    });
+  });
 });
+
+
+
 
 $(document).ready(function () {
 var $sliderMain = $('.slider-main');

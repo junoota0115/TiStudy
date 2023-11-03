@@ -1149,12 +1149,13 @@ letter-spacing: 1.28px;
   }
 
 /* Slick Sliderのスタイルを調整 */
-/* .slick-slide {
-    padding: 0 15px; /* スライドの間隔を調整 
-} */
+.slick-slide {
+    padding: 0 15px; /* スライドの間隔を調整*/ 
+}
 
 /* ドットナビゲーションのスタイルを調整 */
-/* .slider-dots {
+ .slider-dots {
+	content: '●';
     position: absolute;
     bottom: 0px;
     left: 0;

@@ -276,3 +276,48 @@
 	  intervalID = setInterval(slideBox, interval, 2);
 	}
 
+
+ /* ここ追加してドットの動きを確認中  */
+	
+	let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+
+function showSlide(slideIndex) {
+  if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
+  } else if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  }
+
+  slides.forEach((slide) => {
+    slide.style.display = 'none';
+  });
+
+  dots.forEach((dot) => {
+    dot.classList.remove('active');
+  });
+
+  slides[slideIndex].style.display = 'block';
+  dots[slideIndex].classList.add('active');
+  currentSlide = slideIndex;
+}
+
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
+
+dots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    showSlide(index);
+  });
+});
+
+showSlide(currentSlide);
+
+ /* ここ追加してドットの動きを確認中  */
+

@@ -485,24 +485,35 @@ letter-spacing: 1.28px;
 .slick-slide {
     padding: 0 15px; /* スライドの間隔を調整*/ 
 }
-
-/* ドットナビゲーションのスタイルを調整 */
- .slider-dots {
-	content: '●';
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    list-style: none;
-}
-
-.slider-dots li {
-    display: inline-block;
-    margin: 0 5px;
-	color: #FFF;
-}
-
+ /* ここ追加してドットの動きを確認中  */
+.slideshow-container {
+	width: 100%;
+	overflow: hidden;
+  }
+  
+  .slide {
+	display: none;
+	text-align: center;
+  }
+  
+  .slider-dots {
+	text-align: center;
+  }
+  
+  .dot {
+	height: 30px;
+	width: 30px;
+	margin: 0 5px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.3s ease;
+  }
+  
+  .active {
+	background-color: #333;
+  }
+ /* ここ追加してドットの動きを確認中  */
 
 /* デザイン2 */
 .wrapper2 {

@@ -6,7 +6,7 @@
 	
 	let intervalID;
 	let stopflg = -1;
-	const interval = 6000;
+	const interval = 8000;
 
 	var player1;
 	var player2;

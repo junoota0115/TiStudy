@@ -1439,7 +1439,7 @@ footer .history {
   }
   
   .box {
-	transition: all 3s;
+	transition: all 1s; /*レスポンシブの場合は少し早い方が見栄えが良い？*/
 	position: absolute;
 	top: 5px;
 	left:0;	
@@ -1521,52 +1521,35 @@ footer .history {
     padding: 0 15px; /* スライドの間隔を調整 */
 }
 
-/* ドットナビゲーションのスタイルを調整 */
-.slider-dots {
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    list-style: none;
-}
-
-.slider-dots li {
-    display: inline-block;
-    margin: 0 5px;
-	color: #FFF;
-}
-
-/* ドットの大きさを変更 */
-.slider-dots li button {
-    width: 10px; /* ドットの幅 */
-    height: 10px; /* ドットの高さ */
-}
-
-
-  .custom-arrows {
-	display: flex;
-	/* justify-content:space-between; */
-	/* margin: 0px 50px; */
-	gap: 100px;
-	transform: translateY(-42%);
-
+/* ここ追加してドットの動きを確認中  */
+.slideshow-container {
+	width: 100%;
+	overflow: hidden;
   }
   
-  .custom-prev-arrow,
-  .custom-next-arrow {
-	  font-size: 24px;
-	  cursor: pointer;
-	}
-	
-	.custom-next-arrow {
-		margin-left: 0px; /* 矢印間のスペースを調整 */
-	}
-	
-	.custom-prev-arrow img,
-	.custom-next-arrow img {
-		width: 50px;
-	}
+  .slide {
+	display: none;
+	text-align: center;
+  }
+  
+  .slider-dots {
+	text-align: center;
+  }
+  
+  .dot {
+	height: 10px;
+	width: 10px;
+	margin: 0 5px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.3s ease;
+  }
+  
+  .active {
+	background-color: #333;
+  }
+ /* ここ追加してドットの動きを確認中  */
 
 		
 	/* デザイン２ */

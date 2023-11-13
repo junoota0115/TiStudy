@@ -6,15 +6,15 @@
 	
 	let intervalID;
 	let stopflg = -1;
-	const interval = 8000;
+	const interval = 6000;
 
 	var player1;
 	var player2;
 	var player3;
 	function onYouTubePlayerAPIReady() {
 		player1 = new YT.Player('youtube1', {
-			// height: '553',
-			// width: '760',
+			height: '100%',
+			width: '100%',
 			videoId: 'zT3X7P8xUqo',
 			rel: 0,
 			background: 1,
@@ -23,8 +23,8 @@
 			}
 		});
 		player2 = new YT.Player('youtube2', {
-			// height: '553',
-			// width: '760',
+			height: '100%',
+			width: '100%',
 			videoId: 'gsT6eKsnT0M',
 			rel: 0,
 			events: {
@@ -32,8 +32,8 @@
 			}
 		});
 		player3 = new YT.Player('youtube3', {
-			// height: '553',
-			// width: '760',
+			height: '100%',
+			width: '100%',
 			videoId: '0fdY9J7p2EY',
 			rel: 0,
 			events: {
@@ -244,7 +244,7 @@
 	  function slideBox(flg) {
 		if (flg==1) {
 		  // prevボタン
-		  document.querySelectorAll('.box').forEach((box) => {
+		  document.querySelectorAll('.box').forEach((box, index) => {
 			if (box.classList.contains('center')) {
 			  box.classList.remove('center');
 			  box.classList.add('next');
@@ -254,17 +254,19 @@
 			} else if (box.classList.contains('prev')) {
 			  box.classList.remove('prev');
 			  box.classList.add('center');
+			  changeDot(index)
 			}
 		  });
 		} else if (flg==2) {
 		  // nextボタン
-		  document.querySelectorAll('.box').forEach(box => {
+		  document.querySelectorAll('.box').forEach((box, index) => {
 			if (box.classList.contains('center')) {
 			  box.classList.remove('center');
 			  box.classList.add('prev');
 			} else if (box.classList.contains('next')) {
 			  box.classList.remove('next');
 			  box.classList.add('center');
+			  changeDot(index)
 			} else if (box.classList.contains('prev')) {
 			  box.classList.remove('prev');
 			  box.classList.add('next');
@@ -272,52 +274,70 @@
 		  });
 		}
 	  }
-	
-	  intervalID = setInterval(slideBox, interval, 2);
+
+	  function changeDot(index) {
+		let dot0 = document.querySelector('.dot0');
+		let dot1 = document.querySelector('.dot1');
+		let dot2 = document.querySelector('.dot2');
+		
+		dot0.classList.remove('active');
+		dot1.classList.remove('active');
+		dot2.classList.remove('active');
+
+		if (index==0) {
+			dot0.classList.add('active');
+		} else if (index==1) {
+			dot1.classList.add('active');
+		} else if (index==2) {
+			dot2.classList.add('active');
+		}
+	}
+
+	//   intervalID = setInterval(slideBox, interval, 2);
 	}
 
 
  /* ここ追加してドットの動きを確認中  */
 	
-	let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
+// 	let currentSlide = 0;
+// const slides = document.querySelectorAll('.boxes');
+// const dots = document.querySelectorAll('.dot');
 
-function showSlide(slideIndex) {
-  if (slideIndex < 0) {
-    slideIndex = slides.length - 1;
-  } else if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  }
+// function showSlide(slideIndex) {
+//   if (slideIndex < 0) {
+//     slideIndex = slides.length - 1;
+//   } else if (slideIndex >= slides.length) {
+//     slideIndex = 0;
+//   }
 
-  slides.forEach((slide) => {
-    slide.style.display = 'none';
-  });
+//   slides.forEach((slide) => {
+//     slide.style.display = 'none';
+//   });
 
-  dots.forEach((dot) => {
-    dot.classList.remove('active');
-  });
+//   dots.forEach((dot) => {
+//     dot.classList.remove('active');
+//   });
 
-  slides[slideIndex].style.display = 'block';
-  dots[slideIndex].classList.add('active');
-  currentSlide = slideIndex;
-}
+//   slides[slideIndex].style.display = 'block';
+//   dots[slideIndex].classList.add('active');
+//   currentSlide = slideIndex;
+// }
 
-function nextSlide() {
-  showSlide(currentSlide + 1);
-}
+// function nextSlide() {
+//   showSlide(currentSlide + 1);
+// }
 
-function prevSlide() {
-  showSlide(currentSlide - 1);
-}
+// function prevSlide() {
+//   showSlide(currentSlide - 1);
+// }
 
-dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    showSlide(index);
-  });
-});
+// dots.forEach((dot, index) => {
+//   dot.addEventListener('click', () => {
+//     showSlide(index);
+//   });
+// });
 
-showSlide(currentSlide);
-
+// showSlide(currentSlide);
+changeDot(0);
  /* ここ追加してドットの動きを確認中  */
 

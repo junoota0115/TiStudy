@@ -437,7 +437,7 @@ letter-spacing: 1.28px;
 	text-align: left;
 	font-size: 20px;
 }
-.sma{
+.sma{/*PCでは行わないがレスポンシブでは実施する為に表記*/
     display: none;
 }
 .wrapper9 p{
@@ -471,14 +471,16 @@ letter-spacing: 1.28px;
   }
 
   .button_area .btn{
-	margin: 0 24px
+	margin: 0 24px;
+	cursor:pointer;
 }
+
 
 /* Slick Sliderのスタイルを調整 */
 .slick-slide {
     padding: 0 15px; /* スライドの間隔を調整*/ 
 }
- /* ここ追加してドットの動きを確認中  */
+ /* ドットの動き  */
 .slideshow-container {
 	width: 100%;
 	overflow: hidden;
@@ -506,7 +508,7 @@ letter-spacing: 1.28px;
   .active {
 	background-color: #FFFFFF;
   }
- /* ここ追加してドットの動きを確認中  */
+ /* ドットの動き  */
 
 /* デザイン2 */
 .wrapper2 {
@@ -931,6 +933,7 @@ letter-spacing: 1.28px;
 	width: 40px;
 	height: 40px;
 	flex-shrink: 0;
+	cursor:pointer;
 }
 
 .wrapper10 .address .address_2{
@@ -962,6 +965,12 @@ letter-spacing: 1.28px;
 .wrapper10 .slider-nav{
 	margin: 0 320px;
 	padding-bottom: 56px;
+}
+.wrapper10 img{
+	border-radius: 5px;
+}
+.wrapper10 .slider-nav img{
+	cursor:pointer;
 }
 
 
@@ -1154,7 +1163,7 @@ letter-spacing: 1.28px;
 
 /* フッター */
 footer {
-	padding-top: 16px;
+	padding-top: 20px;
 	padding-bottom: 40px;
 	background-color: #2D9CDB;
 	text-align: center;
@@ -1842,7 +1851,6 @@ footer .history {
 /* デザイン10 */
 .wrapper10 {
 	width: 100%;
-	
 	background-color: #2D9CDB;
 	text-align: center;
 	color: #FFF;
@@ -1927,11 +1935,10 @@ footer .history {
 
 .wrapper10 .slider-for {
 	margin: 1px;
+	padding-bottom: 16px;
 }
 
 .wrapper10 .slider-for img{
-	/* width: 343px;
-	height: 245px; */
 	flex-shrink: 0;
 }
 
@@ -1942,8 +1949,6 @@ footer .history {
 	padding-bottom: 56px;
 }
 .wrapper10 .slider-nav img{
-	/* width: 104px;
-	height: 72px; */
 	flex-shrink: 0;
 }
 	/* デザイン５ */

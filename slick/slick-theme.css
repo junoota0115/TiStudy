@@ -215,6 +215,7 @@
     {
         /* left: 35px; */
         left: 20px;
+        top: 170px;
     }
     [dir='rtl'] .slick-prev
     {
@@ -233,6 +234,7 @@
     .slick-next
     {
         /* right: 35px; */
+        top: 170px;
         right: 35px;
     }
     [dir='rtl'] .slick-next

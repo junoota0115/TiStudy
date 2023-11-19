@@ -1,45 +1,45 @@
 {
-	var tag = document.createElement('script');
+	let tag = document.createElement('script');
 	tag.src = "https://www.youtube.com/player_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
+	let firstScriptTag = document.getElementsByTagName('script')[0];
 	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 	
 	let intervalID;
 	let stopflg = -1;
 	const interval = 6000;
 
-	var player1;
-	var player2;
-	var player3;
+	let movie_title = [];
+	let movie_url = [];
+	let movieGet_flg = false;
+	let slide_flg = false;
+	let youtube_player = [];
 	function onYouTubePlayerAPIReady() {
-		player1 = new YT.Player('youtube1', {
+		getMovieData();
+		if (!movieGet_flg) {
+			// 動画データが取得できなければ時間をおいて再度呼び出し
+			setTimeout(onYouTubePlayerAPIReady, 1000);
+			return;
+			}
+
+		for (let i=0; i<movie_url.length; i++) {
+			// 動画データ登録
+			youtube_player[i] = new YT.Player('youtube'+(i+1), {
 			height: '100%',
 			width: '100%',
-			videoId: 'zT3X7P8xUqo',
+				videoId: movie_url[i],
 			rel: 0,
-			background: 1,
+				background: 1,
 			events: {
 				'onStateChange': onPlayerStateChange
 			}
 		});
-		player2 = new YT.Player('youtube2', {
-			height: '100%',
-			width: '100%',
-			videoId: 'gsT6eKsnT0M',
-			rel: 0,
-			events: {
-				'onStateChange': onPlayerStateChange
+
+		// 動画タイトル登録
+			document.querySelector("#youtube_title"+(i+1)).textContent = movie_title[i];
 			}
-		});
-		player3 = new YT.Player('youtube3', {
-			height: '100%',
-			width: '100%',
-			videoId: '0fdY9J7p2EY',
-			rel: 0,
-			events: {
-				'onStateChange': onPlayerStateChange
-			}
-		});
+
+		// 自動スライド起動
+		intervalID = setInterval(slideBox, interval, 2);
 	}
 	
 	function onPlayerStateChange(event) {
@@ -182,12 +182,12 @@
 				if (xhr.status == 200){
 					let json = xhr.responseText;
 					let data = JSON.parse(json);
-					// console.log(data);
 					for (let i=0; i<data.length; i++) {
-						let videoID = data[i].videoID;
-						makeMovieList(videoID);
+						movie_title[i] = data[i].movie_title;
+						movie_url[i] = data[i].movie_url;
 					}
 				}
+				movieGet_flg = true;
 			}
 		}
 	}
@@ -242,6 +242,11 @@
 	  });
 	
 	  function slideBox(flg) {
+		if (slide_flg) {
+			return;
+		}
+		slide_flg = true;
+
 		if (flg==1) {
 		  // prevボタン
 		  document.querySelectorAll('.box').forEach((box, index) => {
@@ -273,6 +278,10 @@
 			}
 		  });
 		}
+
+		setTimeout(() => {
+			slide_flg = false;
+		}, 2000);
 	  }
 
 	  function changeDot(index) {
@@ -298,46 +307,7 @@
 
 
  /* ここ追加してドットの動きを確認中  */
-	
-// 	let currentSlide = 0;
-// const slides = document.querySelectorAll('.boxes');
-// const dots = document.querySelectorAll('.dot');
 
-// function showSlide(slideIndex) {
-//   if (slideIndex < 0) {
-//     slideIndex = slides.length - 1;
-//   } else if (slideIndex >= slides.length) {
-//     slideIndex = 0;
-//   }
-
-//   slides.forEach((slide) => {
-//     slide.style.display = 'none';
-//   });
-
-//   dots.forEach((dot) => {
-//     dot.classList.remove('active');
-//   });
-
-//   slides[slideIndex].style.display = 'block';
-//   dots[slideIndex].classList.add('active');
-//   currentSlide = slideIndex;
-// }
-
-// function nextSlide() {
-//   showSlide(currentSlide + 1);
-// }
-
-// function prevSlide() {
-//   showSlide(currentSlide - 1);
-// }
-
-// dots.forEach((dot, index) => {
-//   dot.addEventListener('click', () => {
-//     showSlide(index);
-//   });
-// });
-
-// showSlide(currentSlide);
 changeDot(0);
  /* ここ追加してドットの動きを確認中  */
 
